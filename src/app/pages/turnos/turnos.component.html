@@ -1,0 +1,74 @@
+<h1>{{title}}</h1>
+
+<div class="contenedor">
+  <h2>Turnos</h2>
+  <form action="enviar.js">
+    <label>
+      Nombre:
+      <input type="text" maxlength="30" required class="form-control">
+    </label>
+    <br><br>
+    <label>
+      Email:
+      <input type="email" class="form-control" aria-label="Username" aria-describedby="basic-addon1"
+        placeholder="@example.com">
+    </label>
+    <br>
+    <br>
+    <label>
+
+      Contraseña:
+
+      <input type="password" class="form-control">
+
+    </label><br>
+
+
+    <br>
+
+    <label>
+
+      Fecha:
+      <input type="date" class="form-control">
+    </label><br>
+    <br>
+    <label>
+
+      Seleccione Horario (Hora):
+      <input type="time" class="form-control">
+    </label><br>
+
+    <br>
+
+    <label>
+      Sede:
+      <input type="text" list="Esteticas" class="form-control">
+    </label>
+    <datalist id="Esteticas">
+      <option>Recoleta</option>
+      <option>Caballito</option>
+      <option>Ezeiza</option>
+      <option>Tigre</option>
+    </datalist>
+
+
+    <br><br>
+
+    <label>
+      Tratamiento:
+      <input type="text" list="Tratamiento" class="form-control">
+    </label>
+    <datalist id="Tratamiento">
+      <option>Depilacion</option>
+      <option>Corporal</option>
+      <option>Facial</option>
+    </datalist>
+    <br><br><br>
+
+    <input type="reset" value="Reseteo de formulario" class="btn btn-outline-secondary">
+    <input type="submit" value="Envio de formulario" class="btn btn-outline-success">
+
+  </form>
+
+
+</div>

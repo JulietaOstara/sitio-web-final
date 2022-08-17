@@ -1,0 +1,32 @@
+.info {
+  display: flex;
+  margin-top: 215px;
+  flex-direction: column;
+  padding: 1.4rem;
+  padding-left: 2;
+
+  &__contenido {
+    padding: 1rem;
+    padding-left: 0;
+  }
+
+  &__Horarios {
+    border-radius: 10px;
+    display: flex;
+    border: 3px solid rgb(231, 61, 89);
+    gap: 2rem;
+    margin-bottom: 3rem;
+    background-color: peachpuff;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  .info {
+   display: initial;
+}
+ }

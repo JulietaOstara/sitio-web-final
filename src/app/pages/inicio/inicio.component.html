@@ -1,0 +1,75 @@
+<h1> {{title1}}</h1>
+<app-carrousel></app-carrousel>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="inicio.component.scss">
+</head>
+<br>
+
+<body>
+  <div class="contenedor">
+    <figure>
+      <img src="assets/tratamientos/facial.jpg" alt="">
+      <div class="capa">
+        <h3 class="tratamientos-titulo">Faciales</h3>
+        <p> PEELING: El Peeling es un procedimiento para remover
+          células muertas, estimula la formacion de colágeno,
+          elimina manchas ocasionadas por el sol, tensa la piel,
+          borra arruguitas, da brillo y luminosidad profunda
+          a la piel.</p>
+        <br>
+        <p> MICRODERMOABRASIÓN CON PUNTA DE DIAMANTE Y ÁCIDO HIALURÓNICO:
+          Es un procedimiento no invasivo, seguro y con resultados óptimos
+          inmediatos, para conseguir una piel joven, saludable y luminosa. </p>
+        <br>
+        <p>PULIDO E HIDRATACIÓN FACIAL: Eliminá todas las células muertas e impurezas y
+          celulas muertas de tu piel, permitiendo una mayor oxigenación y mejorando su aspecto notablemente. </p>
+        <br>
+      </div>
+    </figure>
+  </div>
+  <div class="contenedor">
+    <figure>
+      <img src="assets/tratamientos/cuerpo.jpg" alt="">
+      <div class="capa">
+        <h3 class="tratamientos-titulo">Corporales</h3>
+
+
+        <p>ONDAS RUSAS Y ELECTRODOS: Este sistema reafirma rápidamente
+          tus músculos y modela tu cuerpo. Este tratamiento fortalece el sistema circulatorio, eliminando las
+          toxinas
+          que generan celulitis. </p>
+        <br>
+        <p>RADIOFRECUENCIA: Un sistema de ondas electromagnéticas que
+          penetran profundamente en las capas subdérmicas eliminando la celulitis y la flacidez.</p>
+        <br>
+        <p>ULTRACAVITACIÓN: Método no quirúrgico, confiable e indoloro, que permite eliminar adipocitos (grasa),
+          localizados en diversas áreas del cuerpo como abdomen, brazos, cintura,
+          muslo completo (externo e interno), pantalón de montar. </p>
+
+      </div>
+    </figure>
+  </div>
+  <div class="contenedor">
+    <figure>
+      <img src="assets/tratamientos/depilacion.jpg" alt="">
+      <div class="capa">
+        <h3 class="tratamientos-titulo">Depilación</h3>
+
+        <p>DEPILACIÓN: En 3 o 4 zonas a elección. Se utiliza un sistema de alta tecnología para erradicar el vello a
+          través de la fotodepilación
+          y la luz pulsada para que tu depilación sea rapida y efectiva. </p>
+        <br>
+      </div>
+    </figure>
+  </div>
+  <br><br><br>
+  {{data?.fact}}
+</body>
+
+</html>

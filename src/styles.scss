@@ -1,0 +1,21 @@
+* {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+:root {
+  --blanco: #fff;
+  --negro: #000;
+  --papaya: rgb(254, 201, 210);
+  --fresa: rgb(255, 97, 221);
+  --pink: rgba(255, 129, 190, 0.973);
+  $secondary: #4b4b4b;
+}
+
+body {
+  background-color: #ddd;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}

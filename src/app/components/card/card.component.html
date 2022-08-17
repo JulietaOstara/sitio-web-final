@@ -1,0 +1,22 @@
+<div class="card">
+  <img class="card-img" src="{{ imagen }}" alt="">
+  <div class="card-info">
+    <div class="card-top">
+      <h2 class="card-info_categoria"> {{ categoria }}</h2>
+      <h3 class="card-info_titulo">{{ titulo }}</h3>
+
+      <p> {{ contenido }} </p>
+
+      {{destacado}}
+      <p class="card-destacado" *ngIf="destacado">
+        Con la compra de un tratamiento, llevala de regalo !
+      </p>
+    </div>
+
+    <p class="card-info_precio">
+      {{precio | currency}}<br>
+      Consulta descuento por cliente en tu sucursal.
+    </p>
+
+  </div>
+</div>

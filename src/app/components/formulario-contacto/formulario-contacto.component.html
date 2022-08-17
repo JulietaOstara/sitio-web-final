@@ -1,0 +1,51 @@
+<section class="formulario">
+  <h1 class="formulario__Titulo">
+    Conecta con Nosotros
+  </h1>
+  <p class="formulario__Parrafo"> Obtene tu primera cita sin costo. Completa el formulario y nos pondremos en contacto.
+  </p>
+
+  <form (ngSubmit)="onSubmit(contactForm.value)" #contactForm="ngForm" class="form">
+    <div>
+      <label for="name" class="form__label">Tu Nombre:</label>
+      <input type="text" class="form-control" id="name" name="name" [(ngModel)]="Formulario.name"
+        placeholder="Escribe tu nombre" required #name="ngModel">
+      <div [hidden]="name.valid || name.pristine" class="invalid-feedback">*Campo obligatorio</div>
+    </div>
+
+    <div>
+      <label for="mail" class="form__label">Correo electrónico:</label>
+      <input type="email" class="form-control" id="mail" name="mail" [(ngModel)]="Formulario.mail"
+        placeholder="tu@email.com" required #mail="ngModel">
+      <div [hidden]="mail.valid || mail.pristine" class="invalid-feedback">*Campo obligatorio</div>
+    </div>
+
+    <div>
+      <label for="opciones" class="form__label">Motivo de tu consulta</label>
+      <select name="opciones" type="text" class="form-select" id="opciones" [(ngModel)]="Formulario.opciones">
+        <option value="Servicios">Nuestros servicios</option>
+        <option value="Productos">Nuestros productos</option>
+        <option value="Otros">Otras preguntas</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="msg" class="form__label">Mensaje:</label>
+      <textarea id="msg" class="form-control" name="msg" placeholder="Escribe tu mensaje..."
+        [(ngModel)]="Formulario.msg" required #msg="ngModel">
+            </textarea>
+      <div [hidden]="msg.valid || msg.pristine" class="invalid-feedback">*Campo obligatorio</div>
+    </div>
+    <div>
+      <button type="submit" class="boton" (click)="onSubmit(contactForm.value)"
+        [disabled]="(contactForm.statusChanges | async) ==='INVALID'">
+        Envíe su mensaje</button>
+    </div>
+  </form>
+</section>
+<div class="map-responsive">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.3922223456!2d-58.419684384800085!3d-34.64479628044887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccba08228d5d5%3A0x9f47f7a45128a1a7!2sQuilmes%20463%2C%20C1437DLI%20CABA%2C%20Argentina!5e0!3m2!1ses-419!2smx!4v1660605932355!5m2!1ses-419!2smx"
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>

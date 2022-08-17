@@ -1,0 +1,91 @@
+.titulo {
+  color: rgb(173, 61, 158);
+  padding-left: 50%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+}
+
+section h2 {
+  background-color: papayawhip;
+  color: rgb(124, 34, 112);
+  text-align: center;
+  font-family: 'Harrington', Courier, monospace;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 50px;
+  width: 50%;
+  margin-bottom: 10px;
+  font-size: 2em;
+  position: relative;
+  overflow: hidden;
+}
+
+section p {
+  color: rgb(84, 9, 84);
+  font-size: 1.3em;
+}
+
+.tratamientos {
+  background-color: pink;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.circle img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .circle {
+    width: 100;
+  }
+}
+
+
+.circle.circle1 {
+  width: 450px;
+  height: 450px;
+  float: right;
+  border-radius: 60%;
+  margin: 30px;
+  shape-outside: circle();
+}
+
+@media only screen and (max-width: 480px) {
+  .circle {
+    display: block !important;
+    padding-top: .75em;
+  }
+}
+
+
+.circle.circle2 {
+  width: 500px;
+  height: 500px;
+  float: right;
+  border-radius: 60%;
+  margin: 30px;
+  shape-outside: circle();
+
+}
+.parrafos {
+  text-align: justify;
+  justify-content: center;
+}

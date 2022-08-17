@@ -1,0 +1,55 @@
+<body>
+  <img class="imagen" src="assets/ventaproductos/portada.jpeg" alt="">
+
+</body>
+
+<header class="header">
+  <button (click)="setActive()" class="header__button">
+    <svg xmlns="http://www.w3.org/2000/svg" class="header__svg" width="16" height="16" fill="currentColor"
+      viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+    </svg>
+  </button>
+
+  <nav class="header__nav header__nav--activo" [ngClass]="{'header__nav--activo' : active}">
+    <ul class="header__ul">
+      <li class="header__li">
+        <a href="inicio" class="header__a">
+          Inicio
+        </a>
+      </li>
+      <li class="header__li">
+        <a href="productos" class="header__a">
+          Productos
+        </a>
+      </li>
+      <li class="header__li">
+        <a href="tratamientos" class="header__a">
+          Tratamientos
+        </a>
+      </li>
+      <li class="header__li">
+        <a href="empresa" class="header__a">
+          Empresa
+        </a>
+      </li>
+      <li class="header__li">
+        <a href="contacto" class="header__a">
+          Contacto
+        </a>
+      </li>
+      <li class="header__li">
+        <a href="turnos" class="header__a">
+          Turnos
+        </a>
+      </li>
+      <li class="header__li">
+        <a href="login" class="header__a">
+          Registrate
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<br><br><br><br>

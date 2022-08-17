@@ -1,0 +1,36 @@
+<div class="container">
+  <h1>Lista de Productos</h1>
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+        <input type="text" class="form-control" name="filterpost" placeholder="Buscar Productos..."
+          [(ngModel)]="filterpost">
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row table-responsive">
+    <div class="col">
+      <table class="table table-hover">
+        <thead>
+          <tr class="table-danger">
+            <th scope="col">Productos</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Titulo</th>
+            <th scope="col">Contenido</th>
+            <th scope="col">Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of productos | filter:filterpost ">
+            <td><img class="img" src={{product.imagen}} /></td>
+            <td>{{product.categoria}}</td>
+            <td>{{product.title}}</td>
+            <td>{{product.contenido}}</td>
+            <td>{{product.precio}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

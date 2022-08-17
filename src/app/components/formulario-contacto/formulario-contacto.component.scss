@@ -1,0 +1,98 @@
+.formulario {
+  grid-column-start: 5;
+  border-radius: 4px;
+  box-shadow: 8px 8px 15px pink;
+  margin: 2rem 6rem 12rem 28rem;
+  padding: 5rem;
+
+  &__Titulo {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  &__Parrafo {
+    padding-right: 4rem;
+  }
+
+  .form {
+    margin-top: 3rem;
+    width: 100%;
+
+    &__label {
+      display: flex;
+      width: 100%;
+      text-align: left;
+      padding-bottom: 4px;
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+
+    .invalid-feedback {
+      font-size: 1rem;
+      padding-top: 1, 5rem;
+    }
+
+    input,
+    textarea {
+      font-size: 1rem;
+      font-weight: 100;
+      padding: 0px;
+      width: 100%;
+      box-sizing: border-box;
+      border: 2px solid var(--papaya);
+      border-radius: 8px;
+
+      input:focus,
+      textarea:focus {
+        border-color: rgb(247, 140, 247);
+      }
+    }
+
+    textarea {
+      vertical-align: top;
+      height: 4rem;
+    }
+
+    .boton {
+      margin-top: 2rem;
+      padding: 1rem;
+      font-weight: 500;
+      color: rgb(120, 30, 60);
+      border-radius: 8px;
+      background-image: rgb(175, 89, 118);
+      background-size: 400%;
+      background-position: left;
+      transition: all .5s;
+
+      &:hover {
+        background-position: right;
+        color: pink;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .formulario {
+    display: initial;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin: 30% 2rem 4rem 3rem;
+  }
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+
+}

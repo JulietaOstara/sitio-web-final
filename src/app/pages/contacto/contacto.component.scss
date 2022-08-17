@@ -1,0 +1,50 @@
+.contactanos{
+
+    background-image: url("/../assets/varias/recepcionista.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    border: 3px solid rgb(206, 62, 86);
+    color:rgba(185, 51, 73, 0.941);
+    text-decoration-color: rgb(153, 34, 34);
+    display: grid;
+    grid-template-columns: 55vw 35vw 2fr;
+    grid-template-rows: 130vh;
+    gap: 8rem;
+
+    }
+
+
+
+@media (max-width: 1200px) {
+    .contactanos {
+        grid-template-columns: 60vw 40vw 1fr;
+        grid-template-rows: 100vh;
+        gap: 3rem;
+        margin-bottom: 5rem;
+        display: grid;
+
+    }
+}
+
+
+
+@media (max-width: 1027px) {
+    .contactanos {
+        grid-template-columns: 60vw 50vw;
+        grid-template-rows: 100vh;
+        gap: 2rem;
+        display: grid;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .contactanos {
+        grid-template-columns: 80vw;
+        grid-template-rows: 100vh 1fr;
+        justify-content: center;
+        display: grid;
+    }
+}

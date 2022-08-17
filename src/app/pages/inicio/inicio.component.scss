@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: palevioletred;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: var(--blanco);
+  display: inline-flex;
+  text-align: justify;
+  padding: 10px 16px;
+  padding-left: 40px;
+  margin-bottom: 40px;
+}
+
+.contenedor {
+  display: flex;
+  margin-top: 215px;
+  justify-content: center;
+}
+
+@media screen and (min-width: 720px) AND (max-width: 1280px) {
+  .contenedor {
+    position: relative;
+    top: -300px;
+    left: 85px;
+    flex-direction: column;
+  }
+}
+
+.contenedor figure {
+  position: relative;
+  height: 400px;
+  width: 500px;
+  overflow: hidden;
+  border-radius: 7px;
+  box-shadow: 0px 15px 25px rgb(216, 99, 165);
+  cursor: pointer;
+}
+
+.contenedor figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+}
+
+.contenedor figure .capa {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 239, 213);
+  transition: all 400ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: justify;
+  margin-bottom: 19px;
+}
+
+.contenedor figure:hover>.capa {
+  opacity: 1;
+  visibility: visible;
+
+}
+
+.contenedor figure:hover>.capa h3 {
+  margin-top: auto;
+  margin-bottom: 15px;
+}
+
+.contenedor figure:hover>img {
+  transform: scale(1.3);
+}
+
+.contenedor figure .capa h3 {
+  color: rgba(255, 239, 213, 0.968);
+  background-color: rgba(240, 141, 184, 0.809);
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 120px;
+  transition: all 500ms ease-out;
+  margin-top: 30px;
+}
+
+.contenedor figure .capa p {
+  color: rgba(193, 71, 187, 0.968);
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  text-align: justify;
+
+}

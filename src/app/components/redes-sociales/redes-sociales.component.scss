@@ -1,0 +1,26 @@
+.redes {
+  display: flex;
+  justify-content: center;
+  max-width: 19vw;
+  margin: 0;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+
+  &__logos {
+    a {
+      padding: 1rem;
+    }
+
+    svg {
+      color: var(--pink)
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .redes {
+    display: block !important;
+    margin-top: 0px !important;
+    padding-top: .75em;
+  }
+}

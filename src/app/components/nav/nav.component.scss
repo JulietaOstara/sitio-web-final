@@ -1,0 +1,98 @@
+body {
+  text-align: center;
+  padding: 30px;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.imagen {
+  background-repeat: no-repeat;
+  position: relative;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: fill;
+}
+
+.header {
+  width: 100%;
+  background-color: pink;
+  padding: 1em;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  &__a {
+    text-decoration-line: none;
+    text-decoration: none;
+    color: purple;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+  }
+
+  &__nav {
+    @media screen and (max-width:480px) {
+      display: flex;
+      width: 100%;
+      height: 0vh;
+      overflow: hidden;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      pointer-events: none;
+      transition: all .6s ease;
+
+      &--activo {
+        height: 50vh;
+        pointer-events: auto;
+      }
+    }
+
+  }
+
+  flex-grow: 4;
+  list-style: none;
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  &__button {
+    display: none;
+    border: none;
+    cursor: pointer;
+    background-color: pink;
+
+    @media screen and (max-width:480px) {
+      display: flex;
+    }
+  }
+
+
+  &__svg {
+    width: 2em;
+    height: 2em;
+    fill: white;
+  }
+
+  &__ul {
+    display: flex;
+    list-style: none;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    @media screen and (max-width:480px) {
+      flex-direction: column;
+    }
+  }
+
+  &__li {
+    margin: 0 .5em;
+
+    @media screen and (max-width:480px) {
+      margin: .5em 0;
+    }
+  }
+}
